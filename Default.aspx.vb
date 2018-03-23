@@ -30,7 +30,7 @@ Partial Class Default4
             End If
 
         Next
-        Dim xml As String = "C:\Users\BT-2\Desktop\dandik_yeni\BHDB002017050.xml"
+        Dim xml As String = "C:\Users\BT-2\Desktop\YBSignature\BHDB002017050.xml"
         signEracun(xml, certificate)
     End Sub
 
@@ -101,6 +101,8 @@ Partial Class Default4
         signedXml.AddObject(dataObject)
 
         signedXml.SigningKey = certificate.PrivateKey
+        signedXml.
+
         Dim keyInfo As KeyInfo = New KeyInfo()
         Dim keyInfoX509Data As KeyInfoX509Data = New KeyInfoX509Data(certificate, X509IncludeOption.ExcludeRoot)
         keyInfo.AddClause(keyInfoX509Data)
